@@ -27,7 +27,7 @@
   --accent: #65c5b9;
   --accent-soft: #183a39;
   --accent-contrast: #0b1b1b;
-  --grid: rgba(101, 197, 185, 0.035);
+  --grid: transparent;
   --shadow: rgba(0, 0, 0, 0.16);
 }
 
