@@ -15,7 +15,7 @@
     root.dataset.theme = theme;
 
     if (themeColor) {
-      themeColor.setAttribute("content", theme === "dark" ? "#101719" : "#f4f1e9");
+      themeColor.setAttribute("content", theme === "dark" ? "#222b2d" : "#f4f1e9");
     }
 
     if (toggle) {
@@ -26,7 +26,7 @@
   }
 
   const initialTheme =
-    requestedTheme === "dark" || (requestedTheme !== "light" && storedTheme === "dark") ? "dark" : "light";
+    requestedTheme === "light" || (requestedTheme !== "dark" && storedTheme === "light") ? "light" : "dark";
 
   applyTheme(initialTheme);
 
