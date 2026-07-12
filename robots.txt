@@ -1,0 +1,5 @@
+User-agent: *
+Content-signal: search=yes, ai-input=no, ai-train=no, use=reference
+Allow: /
+
+Sitemap: https://masoncribbs.dev/sitemap.xml

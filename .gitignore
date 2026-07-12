@@ -1,0 +1,20 @@
+# Local environment and secret-bearing files
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+
+# Local artifacts
+*.log
+*.tmp
+*.orig
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Local preview captures
+*-preview.png
+*-preview.jpg
