@@ -429,16 +429,6 @@ h3 {
   font-size: 0.65rem;
 }
 
-.method-flow {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 1px;
-  margin: 0;
-  padding: 1px;
-  background: var(--line);
-  list-style: none;
-}
-
 .project-breakdown {
   grid-column: 1 / -1;
   display: grid;
@@ -498,57 +488,12 @@ h3 {
   font-size: 0.85rem;
 }
 
-.method-flow li {
-  position: relative;
-  min-height: 145px;
-  padding: 1.15rem;
-  background: var(--surface);
-}
-
-.method-flow li::after {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  right: -0.45rem;
-  width: 0.9rem;
-  height: 0.9rem;
-  display: grid;
-  place-items: center;
-  background: var(--accent);
-  color: var(--accent-contrast);
-  content: "\203A";
-  font-size: 0.85rem;
-  line-height: 1;
-  transform: translateY(-50%);
-}
-
-.method-flow li:last-child::after {
-  content: none;
-}
-
-.method-flow li > span,
 .method-slices article > span {
   color: var(--accent);
   font-size: 0.68rem;
   font-weight: 600;
   letter-spacing: 0.07em;
   text-transform: uppercase;
-}
-
-.method-flow strong {
-  display: block;
-  margin-top: 2rem;
-  font-size: 0.92rem;
-  font-weight: 500;
-  line-height: 1.35;
-}
-
-.method-flow small {
-  display: block;
-  margin-top: 0.45rem;
-  color: var(--muted);
-  font-size: 0.72rem;
-  line-height: 1.45;
 }
 
 .method-slices {
@@ -982,14 +927,6 @@ h3 {
     min-height: 190px;
   }
 
-  .method-flow {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .method-flow li::after {
-    content: none;
-  }
-
   .project-breakdown {
     grid-template-columns: 1fr;
   }
@@ -1083,17 +1020,8 @@ h3 {
     padding-inline: 1rem;
   }
 
-  .method-flow,
   .method-slices {
     grid-template-columns: 1fr;
-  }
-
-  .method-flow li {
-    min-height: auto;
-  }
-
-  .method-flow strong {
-    margin-top: 0.75rem;
   }
 
   .resume-sidebar {
